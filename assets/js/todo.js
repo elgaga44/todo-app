@@ -34,7 +34,7 @@ $(".container").on("click", ".fas.fa-check-circle", function () {
 });
 
 // Supprimer todo en cliquant sur "Supprimer" 
-$(".container").on("click", "span", function () {
+$(".container").on("click", ".delete", function () {
     $(this).closest('.list').fadeOut( 500, function () {
         $(this).remove();
     });
@@ -42,7 +42,11 @@ $(".container").on("click", "span", function () {
 // (Solution : il faut partir du container, qui n'est pas dynamique, puis faire un selector sur le ".list span" qui lui est dynamique car rajouté à chaque todo)
 
 
+//store string to a db called tasks
+window.localStorage.setItem("tasks", "task 1");
 
+//Read the previously saved string
+var savedTasks = window.localStorage.getItem("tasks");
 
 
 
