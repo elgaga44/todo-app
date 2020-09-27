@@ -1,0 +1,131 @@
+body {
+    font-family: Verdana;
+    background: #4CB8C4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    width: 360px;
+    background-color: rgb(250, 251, 255, 0.8);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    padding: 10%;
+    width: 80%;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus {
+    color: #4CB8C4;
+    text-align: end;
+    background: white;
+    width: 10%;
+    padding: 3%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform  1s;
+}
+
+.fa-plus {
+    transition: transform  0.4s ease-in-out;
+}
+
+.fa-plus:hover {
+    color: #3CD3AD;
+    transform: rotate(-90deg);
+}
+
+input {
+    padding: 4%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 0 !important;
+}
+
+.fa-circle {
+    color: gray;
+    font-size: 150%;
+    margin-right: 15px;
+    transition: 1s;
+}
+
+.fa-circle:hover {
+    background: black;
+}
+
+.fa-check-circle {
+    color: #3CD3AD;
+    font-size: 150%;
+    transition: 1s;
+    margin-right: 15px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.delete {
+    background: transparent;
+    color: transparent;
+    font-weight: bolder;
+    width: 0px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list:hover .delete{
+    background: red;
+    color: white;
+    margin-left: 2%;
+    width: 50px;
+}
+
+.highlight {
+    color: grey;
+    text-decoration: line-through;
+    transition: 0.5s;
+}
+
